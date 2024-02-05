@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 90%;
+    margin: 100px auto;
+}
+a {
+    text-decoration: none;
+}
+nav{
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(209, 202, 202);
+    padding: 20px 40px;
+}
+nav .menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+nav .right ul {
+display: flex;
+gap: 30px;
+list-style: none;
+}
+nav .right a{
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+    transition: 1s;
+}
+nav .left a{
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+    transition: 1s;
+
+}
+nav .left a span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+nav .right a:hover {
+    background-color: rgb(209, 202, 202);
+
+}
+nav .left a:hover{
+    background-color: rgb(209, 202, 202);
+}
+header{
+    height: 100vh;
+    background: url(imgs/header.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+
+
+}
+header span {
+    font-weight: bold;
+    background-color: #000;
+    margin-right: 10px;
+    padding: 10px;
+    opacity: 0.6;
+}
+/* .projects {
+    margin: 100px 10px;
+} */
+.houses{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.house{
+    width: 24%;
+    position: relative;
+    
+}
+.house img{
+    width: 100%;
+    
+
+}
+.house p {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+
+}
+.about{
+    margin: 100px 10px;
+}
+hr{
+    margin-top: 20px;
+}
+.pra{
+    margin-bottom: 70px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card{
+    width: 24%;
+}
+.card img {
+    width: 100%;
+}
+.card h2 {
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.card span{
+    color: gray;
+    opacity: 0.8;
+}
+.card p{
+    margin: 10px 0px;
+}
+.card button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+}
+button:hover{
+    background-color: rgb(207, 205, 205);
+}
+.card > *{
+    margin-bottom: 10px;
+}
+.contact p{
+    margin-top: 40px;
+    font-size: 18px;
+}
+.contact input{
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    outline: none;
+    border: none    ;
+    border-bottom: 1px solid gray;
+}
+.contact input::placeholder{
+    color: blue;
+    font-size: 18px;
+}
+.contact button{
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 1s;
+}
+.contact button:hover{
+    background-color: gray;
+    color: black;
+    
+}
+.map img{
+    width: 100%;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 24px;
+}
+@media screen and (max-width : 480px){
+    nav{
+        padding: 20px;
+    }
+    nav .right ul {
+        display: none;
+    }
+    nav .menu{
+        display: block;
+    }
+    .houses{
+       flex-direction: column;
+    
+    }
+    .house{
+      width: 100%;
+    }
+    .card{
+        width: 100%;
+    }
+}
+@media screen and (min-width : 481px) and (max-width :768px){
+    nav{
+        padding: 20px;
+    }
+    nav .right ul {
+        display: none;
+    }
+    nav .menu{
+        display: block;
+    }
+    .house{
+      width: 48%;
+    }
+    .card{
+        width: 48%;
+    }
+}
